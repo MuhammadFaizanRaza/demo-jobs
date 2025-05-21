@@ -1,38 +1,239 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #2c3e50;
   color: white;
+  padding: 30px 0;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+main {
+  padding: 20px 0;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #eee;
+  color: #777;
+}
+
+/* Job List Styles */
+.job-list {
+  text-align: left;
+}
+
+.job-list h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.job-list-item {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.job-summary {
+  padding: 15px 20px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.job-summary:hover {
+  background-color: #f0f0f0;
+}
+
+.job-summary h3 {
+  margin: 0 0 10px;
+  color: #2980b9;
+}
+
+.job-summary-details {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.job-summary-details span {
+  margin: 0 10px;
+}
+
+.job-summary-details span:first-child {
+  margin-left: 0;
+}
+
+/* Job Post Styles */
+.job-post {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  background-color: white;
+}
+
+.job-meta {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.job-meta span {
+  margin: 0 10px;
+}
+
+.job-meta span:first-child {
+  margin-left: 0;
+}
+
+.job-salary {
+  background-color: #f2f9ff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.job-description {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.job-requirements h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.job-requirements ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.job-requirements li {
+  margin-bottom: 8px;
+}
+
+.job-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.posted-date {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.apply-button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.apply-button:hover {
+  background-color: #2ecc71;
+}
+
+.job-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between image and text */
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.job-logo {
+  border-radius: 8px;
+  object-fit: contain;
+  background-color: #f5f5f5;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-title {
+  display: inline-block;
+  color: #333;
+}
+
+.job-details-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.job-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.job-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f0f0f0;
+}
+
+.job-title {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #222;
+}
+
+.job-location {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.job-meta,
+.job-contact {
+  margin: 1rem 0;
+}
+
+.job-meta p,
+.job-contact p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.job-description {
+  margin-top: 1.5rem;
+}
+
+.job-description h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
