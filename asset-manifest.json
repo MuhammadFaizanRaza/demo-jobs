@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MuhammadFaizanRaza/demo-jobs/static/css/main.03d20567.css",
+    "main.js": "/MuhammadFaizanRaza/demo-jobs/static/js/main.368edb3f.js",
+    "static/js/453.f44f25cf.chunk.js": "/MuhammadFaizanRaza/demo-jobs/static/js/453.f44f25cf.chunk.js",
+    "index.html": "/MuhammadFaizanRaza/demo-jobs/index.html",
+    "main.03d20567.css.map": "/MuhammadFaizanRaza/demo-jobs/static/css/main.03d20567.css.map",
+    "main.368edb3f.js.map": "/MuhammadFaizanRaza/demo-jobs/static/js/main.368edb3f.js.map",
+    "453.f44f25cf.chunk.js.map": "/MuhammadFaizanRaza/demo-jobs/static/js/453.f44f25cf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03d20567.css",
+    "static/js/main.368edb3f.js"
+  ]
+}
